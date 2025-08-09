@@ -41,7 +41,6 @@
     "endroid/qr-code": "^4.3",
     "kartik-v/yii2-password": "@dev",
     "moonlandsoft/yii2-phpexcel": "*",
-    "simialbi/yii2-widget-chart": "^0.7.0",
     "phpoffice/phpword": "dev-master",
     "dominus77/yii2-sweetalert2-widget": "^2.0",
     "yiisoft/yii2-authclient": "^2.2",

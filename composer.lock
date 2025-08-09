@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cafbbd2d95413d093b419dd496b52142",
+    "content-hash": "c24ac6760eb4229059a1f742193b8734",
     "packages": [
         {
             "name": "2amigos/yii2-file-upload-widget",
@@ -283,21 +283,6 @@
             "time": "2021-06-18T13:26:35+00:00"
         },
         {
-            "name": "bower-asset/animate.css",
-            "version": "3.7.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/animate-css/animate.css.git",
-                "reference": "ab5fe9dae4fdb936eee698ce1850a263008f0a99"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/animate-css/animate.css/zipball/ab5fe9dae4fdb936eee698ce1850a263008f0a99",
-                "reference": "ab5fe9dae4fdb936eee698ce1850a263008f0a99"
-            },
-            "type": "bower-asset"
-        },
-        {
             "name": "bower-asset/blueimp-canvas-to-blob",
             "version": "v3.28.0",
             "source": {
@@ -478,45 +463,6 @@
             "type": "bower-asset",
             "license": [
                 "Apache License, Version 2.0"
-            ]
-        },
-        {
-            "name": "bower-asset/moment",
-            "version": "2.29.3",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:moment/moment.git",
-                "reference": "57c90622e402c929504cc6d6f3de4ebe2a9ffc73"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moment/moment/zipball/57c90622e402c929504cc6d6f3de4ebe2a9ffc73",
-                "reference": "57c90622e402c929504cc6d6f3de4ebe2a9ffc73"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "bower-asset/moment-timezone",
-            "version": "0.5.34",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:moment/moment-timezone.git",
-                "reference": "0446a8f071eface966b67e687adb339f67872d75"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moment/moment-timezone/zipball/0446a8f071eface966b67e687adb339f67872d75",
-                "reference": "0446a8f071eface966b67e687adb339f67872d75"
-            },
-            "require": {
-                "bower-asset/moment": ">=2.9.0"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
             ]
         },
         {
@@ -5284,135 +5230,6 @@
             "time": "2021-02-11T11:37:01+00:00"
         },
         {
-            "name": "simialbi/yii2-simialbi-base",
-            "version": "0.11.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/simialbi/yii2-simialbi-base.git",
-                "reference": "5359103343675a3fe79d1a96bf1e4f2f3bf0dee3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/simialbi/yii2-simialbi-base/zipball/5359103343675a3fe79d1a96bf1e4f2f3bf0dee3",
-                "reference": "5359103343675a3fe79d1a96bf1e4f2f3bf0dee3",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/animate.css": "~3.5",
-                "bower-asset/moment": "^2.23.0",
-                "bower-asset/moment-timezone": "^0.5.23",
-                "ext-intl": "*",
-                "php": ">=7.4",
-                "yiisoft/yii2": "~2.0"
-            },
-            "require-dev": {
-                "bower-asset/autosize": "^4.0.2",
-                "bower-asset/fullcalendar": "4.2.0",
-                "bower-asset/resumablejs": "^1.1.0",
-                "kartik-v/yii2-widget-select2": "^v2.2.2",
-                "simialbi/yii2-summernote": "^1.1.0"
-            },
-            "suggest": {
-                "bower-asset/autosize": "Is needed if you want to use CommentInput (^4.0.2)",
-                "bower-asset/fullcalendar": "Is needed if you want to use FullCalendarAsset (version 4.2.0)",
-                "bower-asset/resumablejs": "Is needed if you want to use FileUploadInput (^1.1.0)",
-                "kartik-v/yii2-widget-select2": "Is needed if you want to use ConditionBuilder (^v2.2.2)",
-                "simialbi/yii2-summernote": "Is needed if you want to use rich text fields in e.g. CommentInput"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "simialbi\\yii2\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Simon Karlen",
-                    "email": "simi.albi@outlook.com"
-                }
-            ],
-            "description": "yii2 simialbi base",
-            "keywords": [
-                "base",
-                "extension",
-                "foundation",
-                "simialbi",
-                "widget",
-                "yii2"
-            ],
-            "support": {
-                "issues": "https://github.com/simialbi/yii2-simialbi-base/issues",
-                "source": "https://github.com/simialbi/yii2-simialbi-base"
-            },
-            "time": "2022-05-05T07:18:14+00:00"
-        },
-        {
-            "name": "simialbi/yii2-widget-chart",
-            "version": "0.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/simialbi/yii2-widget-chart.git",
-                "reference": "3c54bd9bab8ab3c966b652b638eac1972d297407"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/simialbi/yii2-widget-chart/zipball/3c54bd9bab8ab3c966b652b638eac1972d297407",
-                "reference": "3c54bd9bab8ab3c966b652b638eac1972d297407",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=5.6",
-                "simialbi/yii2-simialbi-base": ">=0.10.2 <1.0 | ^1.0.0",
-                "yiisoft/yii2": "^2.0.13"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "<7",
-                "yiisoft/yii2-coding-standards": "~2.0"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "simialbi\\yii2\\chart\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Simon Karlen",
-                    "email": "simi.albi@outlook.com"
-                }
-            ],
-            "description": "Chart implementation of amcharts for yii2 framework",
-            "keywords": [
-                "amcharts",
-                "charts",
-                "yii2"
-            ],
-            "support": {
-                "issues": "https://github.com/simialbi/yii2-widget-chart/issues",
-                "source": "https://github.com/simialbi/yii2-widget-chart"
-            },
-            "time": "2021-01-18T07:50:48+00:00"
-        },
-        {
             "name": "studio-42/elfinder",
             "version": "2.1.57",
             "source": {
@@ -9945,5 +9762,5 @@
         "php": ">=5.6.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
