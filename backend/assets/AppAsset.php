@@ -4,7 +4,7 @@ namespace backend\assets;
 
 use yii\web\AssetBundle;
 
-/**asd
+/**
  * Main backend application asset bundle.
  */
 class AppAsset extends AssetBundle
