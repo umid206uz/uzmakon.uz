@@ -1,0 +1,330 @@
+[25-Jul-2025 19:40:25 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Kirish talab qilinadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/User.php:456
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(706): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(169): yii\base\Module->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Yuborilgan ma`lumotlarni tekshirib bo`lmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php:209
+Stack trace:
+#0 /home3/uzmakonu/public_html/courier/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): courier\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('login', Array)
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('site/login', Array)
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home3/uzmakonu/public_html/courier/web/index.php(16): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '169',
+    'HTTP_COOKIE' => '_csrf-courier=fe7698a37c3ed5c2a82decf757257419cab14da51887f522906a37c9aedcc859a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-courier%22%3Bi%3A1%3Bs%3A32%3A%22CI-NkTj_V0hZPYtT4krpRLvkMSD-txOw%22%3B%7D',
+    'HTTP_HOST' => 'kuryer.uzmakon.uz',
+    'HTTP_REFERER' => 'https://kuryer.uzmakon.uz/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ORIGIN' => 'https://kuryer.uzmakon.uz',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_PRIORITY' => 'u=0, i',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/courier/web',
+    'REMOTE_ADDR' => '94.230.231.235',
+    'REMOTE_PORT' => '16661',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'kuryer.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@kuryer.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/login',
+    'REDIRECT_URL' => '/login',
+    'REDIRECT_REQUEST_METHOD' => 'POST',
+    'GEOIP_ADDR' => '94.230.231.235',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'UZ',
+    'GEOIP_COUNTRY_NAME' => 'Uzbekistan',
+    'GEOIP_LATITUDE' => '41.66670',
+    'GEOIP_LONGITUDE' => '63.83330',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/courier/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://kuryer.uzmakon.uz/login',
+    'SCRIPT_URL' => '/login',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1753454425.193938,
+    'REQUEST_TIME' => 1753454425,
+]
+[04-Aug-2025 19:47:06 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Kirish talab qilinadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/User.php:456
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(706): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(169): yii\base\Module->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Yuborilgan ma`lumotlarni tekshirib bo`lmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php:209
+Stack trace:
+#0 /home3/uzmakonu/public_html/courier/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): courier\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('login', Array)
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('site/login', Array)
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home3/uzmakonu/public_html/courier/web/index.php(16): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'uz-UZ,uz;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,en;q=0.5',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '185',
+    'HTTP_HOST' => 'kuryer.uzmakon.uz',
+    'HTTP_REFERER' => 'https://kuryer.uzmakon.uz/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/121.0.0.0 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="99", "Samsung Internet";v="25.0", "Chromium";v="121"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Android"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_ORIGIN' => 'https://kuryer.uzmakon.uz',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/courier/web',
+    'REMOTE_ADDR' => '95.214.211.143',
+    'REMOTE_PORT' => '40648',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'kuryer.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@kuryer.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/login',
+    'REDIRECT_URL' => '/login',
+    'REDIRECT_REQUEST_METHOD' => 'POST',
+    'GEOIP_ADDR' => '95.214.211.143',
+    'GEOIP_CITY' => 'Tashkent',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'UZ',
+    'GEOIP_COUNTRY_NAME' => 'Uzbekistan',
+    'GEOIP_REGION' => 'TK',
+    'GEOIP_LATITUDE' => '41.26150',
+    'GEOIP_LONGITUDE' => '69.21770',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/courier/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://kuryer.uzmakon.uz/login',
+    'SCRIPT_URL' => '/login',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754318826.787556,
+    'REQUEST_TIME' => 1754318826,
+]
+[04-Aug-2025 19:47:31 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Kirish talab qilinadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/User.php:456
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(706): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(169): yii\base\Module->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Yuborilgan ma`lumotlarni tekshirib bo`lmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php:209
+Stack trace:
+#0 /home3/uzmakonu/public_html/courier/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): courier\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('login', Array)
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('site/login', Array)
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home3/uzmakonu/public_html/courier/web/index.php(16): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'uz-UZ,uz;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,en;q=0.5',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '187',
+    'HTTP_HOST' => 'kuryer.uzmakon.uz',
+    'HTTP_REFERER' => 'https://kuryer.uzmakon.uz/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/121.0.0.0 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="99", "Samsung Internet";v="25.0", "Chromium";v="121"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Android"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_ORIGIN' => 'https://kuryer.uzmakon.uz',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/courier/web',
+    'REMOTE_ADDR' => '95.214.211.143',
+    'REMOTE_PORT' => '40648',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'kuryer.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@kuryer.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/login',
+    'REDIRECT_URL' => '/login',
+    'REDIRECT_REQUEST_METHOD' => 'POST',
+    'GEOIP_ADDR' => '95.214.211.143',
+    'GEOIP_CITY' => 'Tashkent',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'UZ',
+    'GEOIP_COUNTRY_NAME' => 'Uzbekistan',
+    'GEOIP_REGION' => 'TK',
+    'GEOIP_LATITUDE' => '41.26150',
+    'GEOIP_LONGITUDE' => '69.21770',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/courier/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://kuryer.uzmakon.uz/login',
+    'SCRIPT_URL' => '/login',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754318851.5319,
+    'REQUEST_TIME' => 1754318851,
+]
+[05-Aug-2025 13:07:18 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Kirish talab qilinadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/User.php:456
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(706): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(169): yii\base\Module->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Yuborilgan ma`lumotlarni tekshirib bo`lmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php:209
+Stack trace:
+#0 /home3/uzmakonu/public_html/courier/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): courier\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('login', Array)
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('site/login', Array)
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home3/uzmakonu/public_html/courier/web/index.php(16): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'uz-UZ,uz;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,en;q=0.5',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '190',
+    'HTTP_HOST' => 'kuryer.uzmakon.uz',
+    'HTTP_REFERER' => 'https://kuryer.uzmakon.uz/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/121.0.0.0 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="99", "Samsung Internet";v="25.0", "Chromium";v="121"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Android"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_ORIGIN' => 'https://kuryer.uzmakon.uz',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/courier/web',
+    'REMOTE_ADDR' => '95.214.211.219',
+    'REMOTE_PORT' => '48945',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'kuryer.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@kuryer.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/login',
+    'REDIRECT_URL' => '/login',
+    'REDIRECT_REQUEST_METHOD' => 'POST',
+    'GEOIP_ADDR' => '95.214.211.219',
+    'GEOIP_CITY' => 'Tashkent',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'UZ',
+    'GEOIP_COUNTRY_NAME' => 'Uzbekistan',
+    'GEOIP_REGION' => 'TK',
+    'GEOIP_LATITUDE' => '41.26150',
+    'GEOIP_LONGITUDE' => '69.21770',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/courier/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://kuryer.uzmakon.uz/login',
+    'SCRIPT_URL' => '/login',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754381238.557284,
+    'REQUEST_TIME' => 1754381238,
+]
