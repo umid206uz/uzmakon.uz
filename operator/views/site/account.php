@@ -1,6 +1,6 @@
 <?php
 
-/* @var $model \mini\models\User */
+/* @var $model \operator\models\User */
 
 use common\models\OperatorOrders;
 use common\models\Orders;

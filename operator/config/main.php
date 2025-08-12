@@ -7,7 +7,7 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'app-mini',
+    'id' => 'app-operator',
     'timeZone' => 'Asia/Tashkent',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -16,15 +16,15 @@ return [
             'class' => 'kartik\grid\Module'
         ]
     ],
-    'controllerNamespace' => 'mini\controllers',
+    'controllerNamespace' => 'operator\controllers',
     'language'  => 'uz',
     'components' => [
         'view' => [
-            'class' => 'mini\components\View'
+            'class' => 'operator\components\View'
         ],
         'request' => [
             'baseUrl' => '',
-            'csrfParam' => '_csrf-mini'
+            'csrfParam' => '_csrf-operator'
         ],
         'assetManager' => [
             'bundles' => [
@@ -40,13 +40,13 @@ return [
             ]
         ],
         'user' => [
-            'class' => 'mini\components\WebUser',
-            'identityClass' => 'mini\models\User',
+            'class' => 'operator\components\WebUser',
+            'identityClass' => 'operator\models\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-mini', 'httpOnly' => true]
+            'identityCookie' => ['name' => '_identity-operator', 'httpOnly' => true]
         ],
         'session' => [
-            'name' => 'advanced-mini'
+            'name' => 'advanced-operator'
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

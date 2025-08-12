@@ -4,10 +4,10 @@
 /* @var $content string */
 
 use common\models\Setting;
-use mini\models\User;
+use operator\models\User;
 use yii\helpers\Html;
-use mini\assets\AppAsset;
-use mini\assets\ProfileAsset;
+use operator\assets\AppAsset;
+use operator\assets\ProfileAsset;
 use yii\helpers\Url;
 
 $setting = Setting::findOne(1);

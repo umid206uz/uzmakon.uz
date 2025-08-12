@@ -1,5 +1,5 @@
 <?php
-namespace mini\widget\returned;
+namespace operator\widget\returned;
 
 use yii\bootstrap\Widget;
 

@@ -1,5 +1,5 @@
 <?php
-namespace mini\components;
+namespace operator\components;
 
 use Yii;
 use yii\web\User;

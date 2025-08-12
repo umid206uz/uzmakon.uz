@@ -1,6 +1,6 @@
 <?php
 
-namespace mini\controllers;
+namespace operator\controllers;
 
 use common\models\OperatorPayment;
 use common\models\OperatorPaymentSearch;
@@ -8,11 +8,11 @@ use common\models\Orders;
 use common\models\Regions;
 use common\models\Setting;
 use frontend\models\SignupForm;
-use mini\models\User;
+use operator\models\User;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use mini\models\LoginForm;
+use operator\models\LoginForm;
 use yii\web\Response;
 use yii\web\UploadedFile;
 use Yii;

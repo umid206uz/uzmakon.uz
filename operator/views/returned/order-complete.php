@@ -6,9 +6,9 @@
 /* @var $model common\models\OrdersReturn */
 /* @var $item common\models\OrdersReturn */
 
-use mini\widget\alert\AlertWidget;
-use mini\widget\count\CountWidget;
-use mini\widget\returned\OrderReturnWidget;
+use operator\widget\alert\AlertWidget;
+use operator\widget\count\CountWidget;
+use operator\widget\returned\OrderReturnWidget;
 use yii\widgets\LinkPager;
 
 $this->title = Yii::t("app", "Read to delivery orders");

@@ -5,7 +5,7 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use mini\assets\LoginAsset;
+use operator\assets\LoginAsset;
 use common\models\Setting;
 
 $setting = Setting::findOne(1);

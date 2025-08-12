@@ -1,5 +1,5 @@
 <?php
-namespace mini\widget\count;
+namespace operator\widget\count;
 
 use yii\bootstrap\Widget;
 

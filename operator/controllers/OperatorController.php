@@ -1,14 +1,14 @@
 <?php
 
-namespace mini\controllers;
+namespace operator\controllers;
 
 use common\models\Orders;
 use common\models\Regions;
 use common\models\Setting;
-use mini\models\User;
+use operator\models\User;
 use yii\web\Controller;
 use yii\filters\AccessControl;
-use mini\models\UpdateForm;
+use operator\models\UpdateForm;
 use yii\data\Pagination;
 use yii\web\Response;
 use Yii;

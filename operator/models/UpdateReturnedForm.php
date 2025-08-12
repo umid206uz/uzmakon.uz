@@ -1,5 +1,5 @@
 <?php
-namespace mini\models;
+namespace operator\models;
 
 use common\models\Orders;
 use common\models\OrdersReturn;

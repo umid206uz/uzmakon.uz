@@ -1,5 +1,5 @@
 <?php
-namespace mini\widget\alert;
+namespace operator\widget\alert;
 
 use yii\bootstrap\Widget;
 

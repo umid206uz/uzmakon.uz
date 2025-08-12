@@ -6,11 +6,11 @@
 /* @var $model common\models\Orders */
 /* @var $item common\models\Orders */
 
-use mini\widget\alert\AlertWidget;
-use mini\widget\count\CountWidget;
+use operator\widget\alert\AlertWidget;
+use operator\widget\count\CountWidget;
 use yii\widgets\LinkPager;
 use yii\bootstrap\Modal;
-use mini\widget\order\OrderWidget;
+use operator\widget\order\OrderWidget;
 
 $this->title = Yii::t("app", "New orders");
 $this->registerJs(<<<JS

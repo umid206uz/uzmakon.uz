@@ -7,13 +7,13 @@
 /* @var $item common\models\Orders */
 /* @var $key string */
 
-use mini\assets\AppAsset;
-use mini\widget\alert\AlertWidget;
-use mini\widget\count\CountWidget;
+use operator\assets\AppAsset;
+use operator\widget\alert\AlertWidget;
+use operator\widget\count\CountWidget;
 use yii\web\View;
 use yii\widgets\LinkPager;
 use yii\bootstrap\Modal;
-use mini\widget\order\OrderWidget;
+use operator\widget\order\OrderWidget;
 use yii\helpers\Url;
 
 $this->title = "Qidiruv natijalari";

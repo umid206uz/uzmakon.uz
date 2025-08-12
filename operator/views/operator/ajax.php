@@ -11,7 +11,7 @@ use kartik\date\DatePicker;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-/* @var $model mini\models\UpdateForm */
+/* @var $model operator\models\UpdateForm */
 /* @var $order common\models\Orders */
 /* @var $form yii\widgets\ActiveForm */
 

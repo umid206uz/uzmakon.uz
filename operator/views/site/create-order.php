@@ -6,7 +6,7 @@ use yii\widgets\ActiveForm;
 use kartik\select2\Select2;
 use kartik\touchspin\TouchSpin;
 use yii\widgets\MaskedInput;
-use mini\widget\alert\AlertWidget;
+use operator\widget\alert\AlertWidget;
 use yii\helpers\ArrayHelper;
 use common\models\Regions;
 use yii\helpers\Url;

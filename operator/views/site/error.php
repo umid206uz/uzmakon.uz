@@ -5,7 +5,7 @@
 /* @var $message string */
 /* @var $exception Exception */
 
-use mini\assets\AppAsset;
+use operator\assets\AppAsset;
 use yii\helpers\Html;
 use yii\web\View;
 

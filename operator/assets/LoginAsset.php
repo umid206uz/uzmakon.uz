@@ -1,6 +1,6 @@
 <?php
 
-namespace mini\assets;
+namespace operator\assets;
 
 use yii\web\AssetBundle;
 

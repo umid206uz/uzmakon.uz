@@ -6,7 +6,7 @@
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 use common\models\OperatorOrders;
-use mini\widget\alert\AlertWidget;
+use operator\widget\alert\AlertWidget;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Url;
 use kartik\grid\GridView;

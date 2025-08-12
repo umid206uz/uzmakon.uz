@@ -1,13 +1,13 @@
 <?php
 
-namespace mini\controllers;
+namespace operator\controllers;
 
 use common\models\Orders;
 use common\models\OrdersReturn;
 use common\models\Regions;
 use common\models\Setting;
-use mini\models\UpdateReturnedForm;
-use mini\models\User;
+use operator\models\UpdateReturnedForm;
+use operator\models\User;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\data\Pagination;

@@ -6,9 +6,9 @@
 /* @var $counts common\models\Orders */
 /* @var $pagination yii\data\Pagination */
 
-use mini\widget\alert\AlertWidget;
-use mini\widget\count\CountWidget;
-use mini\widget\order\OrderWidget;
+use operator\widget\alert\AlertWidget;
+use operator\widget\count\CountWidget;
+use operator\widget\order\OrderWidget;
 use yii\widgets\LinkPager;
 
 $this->title = Yii::t("app", "Returned orders");

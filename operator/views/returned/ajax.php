@@ -11,7 +11,7 @@ use kartik\date\DatePicker;
 use kartik\touchspin\TouchSpin;
 
 /* @var $this yii\web\View */
-/* @var $model mini\models\UpdateReturnedForm */
+/* @var $model operator\models\UpdateReturnedForm */
 /* @var $order common\models\OrdersReturn */
 /* @var $form yii\widgets\ActiveForm */
 
