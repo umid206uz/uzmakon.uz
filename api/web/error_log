@@ -47547,3 +47547,514 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1754749561.931726,
     'REQUEST_TIME' => 1754749561,
 ]
+[10-Aug-2025 05:30:42 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_HOST' => 'api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'curl/7.29.0',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '193.111.61.142',
+    'REMOTE_PORT' => '47316',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '193.111.61.142',
+    'GEOIP_CITY' => 'Rotterdam',
+    'GEOIP_POSTAL_CODE' => '3011',
+    'GEOIP_CONTINENT_CODE' => 'EU',
+    'GEOIP_COUNTRY_CODE' => 'NL',
+    'GEOIP_COUNTRY_NAME' => 'The Netherlands',
+    'GEOIP_REGION' => 'ZH',
+    'GEOIP_LATITUDE' => '51.91790',
+    'GEOIP_LONGITUDE' => '4.49010',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.2',
+    'SSL_SESSION_ID' => '6ad7fc43c79d263be3ee8fcdb8a68501830712e8b7bbffdc0f580f27a2de4a7c',
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-GCM-SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'HEAD',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754785842.776728,
+    'REQUEST_TIME' => 1754785842,
+]
+[10-Aug-2025 17:55:09 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'www.api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'Java/1.8.0_322',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '202.170.91.69',
+    'REMOTE_PORT' => '38883',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'www.api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '202.170.91.69',
+    'GEOIP_CITY' => 'Hong Kong',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'HK',
+    'GEOIP_COUNTRY_NAME' => 'Hong Kong',
+    'GEOIP_LATITUDE' => '22.28420',
+    'GEOIP_LONGITUDE' => '114.17590',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.2',
+    'SSL_SESSION_ID' => 'd21d734fe2ad941bb49a1c17a0c72bc9af5d65e62db04a29a02439462590a06e',
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-GCM-SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://www.api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'HEAD',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754830509.077243,
+    'REQUEST_TIME' => 1754830509,
+]
+[10-Aug-2025 17:55:10 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, x-gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'English',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'www.api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4260.56 Safari/537.36 HuaweiCrawler',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '202.170.91.69',
+    'REMOTE_PORT' => '23753',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'www.api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '202.170.91.69',
+    'GEOIP_CITY' => 'Hong Kong',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'HK',
+    'GEOIP_COUNTRY_NAME' => 'Hong Kong',
+    'GEOIP_LATITUDE' => '22.28420',
+    'GEOIP_LONGITUDE' => '114.17590',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.2',
+    'SSL_SESSION_ID' => '722fc2bdc9898589de6acb938606aff8608b528d3706ea28cfe464ff9ea1f2f8',
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-GCM-SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://www.api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'GET',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754830510.124203,
+    'REQUEST_TIME' => 1754830510,
+]
+[11-Aug-2025 07:37:22 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_HOST' => 'api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'curl/7.29.0',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '193.111.61.142',
+    'REMOTE_PORT' => '58818',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '193.111.61.142',
+    'GEOIP_CITY' => 'Rotterdam',
+    'GEOIP_POSTAL_CODE' => '3011',
+    'GEOIP_CONTINENT_CODE' => 'EU',
+    'GEOIP_COUNTRY_CODE' => 'NL',
+    'GEOIP_COUNTRY_NAME' => 'The Netherlands',
+    'GEOIP_REGION' => 'ZH',
+    'GEOIP_LATITUDE' => '51.91790',
+    'GEOIP_LONGITUDE' => '4.49010',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.2',
+    'SSL_SESSION_ID' => 'a88f3f3174da54abf91440c594a947975632c6e5b9a01bee7ea80e48902b7f0c',
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-GCM-SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'HEAD',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754879842.255683,
+    'REQUEST_TIME' => 1754879842,
+]
+[11-Aug-2025 12:52:53 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_HOST' => 'www.api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (compatible; wpbot/1.3; +https://forms.gle/ajBaxygz9jSR8p8G9)',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '34.222.188.132',
+    'REMOTE_PORT' => '51038',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'www.api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/robots.txt',
+    'REDIRECT_URL' => '/robots.txt',
+    'REDIRECT_REQUEST_METHOD' => 'GET',
+    'GEOIP_ADDR' => '34.222.188.132',
+    'GEOIP_CITY' => 'Boardman',
+    'GEOIP_POSTAL_CODE' => '97818',
+    'GEOIP_CONTINENT_CODE' => 'NA',
+    'GEOIP_COUNTRY_CODE' => 'US',
+    'GEOIP_COUNTRY_NAME' => 'United States',
+    'GEOIP_REGION' => 'OR',
+    'GEOIP_LATITUDE' => '45.84910',
+    'GEOIP_LONGITUDE' => '-119.71430',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://www.api.uzmakon.uz/robots.txt',
+    'SCRIPT_URL' => '/robots.txt',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'GET',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754898773.181304,
+    'REQUEST_TIME' => 1754898773,
+]
+[11-Aug-2025 12:52:53 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_HOST' => 'www.api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (compatible; wpbot/1.3; +https://forms.gle/ajBaxygz9jSR8p8G9)',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '34.222.188.132',
+    'REMOTE_PORT' => '51038',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'www.api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '34.222.188.132',
+    'GEOIP_CITY' => 'Boardman',
+    'GEOIP_POSTAL_CODE' => '97818',
+    'GEOIP_CONTINENT_CODE' => 'NA',
+    'GEOIP_COUNTRY_CODE' => 'US',
+    'GEOIP_COUNTRY_NAME' => 'United States',
+    'GEOIP_REGION' => 'OR',
+    'GEOIP_LATITUDE' => '45.84910',
+    'GEOIP_LONGITUDE' => '-119.71430',
+    'HTTPS' => 'on',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://www.api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'GET',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754898773.356208,
+    'REQUEST_TIME' => 1754898773,
+]
+[11-Aug-2025 15:20:10 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_HOST' => 'www.api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '54.194.176.158',
+    'REMOTE_PORT' => '37926',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'www.api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '54.194.176.158',
+    'GEOIP_CITY' => 'Dublin',
+    'GEOIP_POSTAL_CODE' => 'D02',
+    'GEOIP_CONTINENT_CODE' => 'EU',
+    'GEOIP_COUNTRY_CODE' => 'IE',
+    'GEOIP_COUNTRY_NAME' => 'Ireland',
+    'GEOIP_REGION' => 'L',
+    'GEOIP_LATITUDE' => '53.33790',
+    'GEOIP_LONGITUDE' => '-6.25910',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_256_GCM_SHA384',
+    'SSL_CIPHER_USEKEYSIZE' => '256',
+    'SSL_CIPHER_ALGKEYSIZE' => '256',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://www.api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'GET',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754907610.282389,
+    'REQUEST_TIME' => 1754907610,
+]
+[11-Aug-2025 15:27:59 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_HOST' => 'api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '54.194.176.158',
+    'REMOTE_PORT' => '45728',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '54.194.176.158',
+    'GEOIP_CITY' => 'Dublin',
+    'GEOIP_POSTAL_CODE' => 'D02',
+    'GEOIP_CONTINENT_CODE' => 'EU',
+    'GEOIP_COUNTRY_CODE' => 'IE',
+    'GEOIP_COUNTRY_NAME' => 'Ireland',
+    'GEOIP_REGION' => 'L',
+    'GEOIP_LATITUDE' => '53.33790',
+    'GEOIP_LONGITUDE' => '-6.25910',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_256_GCM_SHA384',
+    'SSL_CIPHER_USEKEYSIZE' => '256',
+    'SSL_CIPHER_ALGKEYSIZE' => '256',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'GET',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754908079.623139,
+    'REQUEST_TIME' => 1754908079,
+]
+[12-Aug-2025 06:16:26 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_HOST' => 'api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'curl/7.29.0',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '193.111.61.142',
+    'REMOTE_PORT' => '34160',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '193.111.61.142',
+    'GEOIP_CITY' => 'Rotterdam',
+    'GEOIP_POSTAL_CODE' => '3011',
+    'GEOIP_CONTINENT_CODE' => 'EU',
+    'GEOIP_COUNTRY_CODE' => 'NL',
+    'GEOIP_COUNTRY_NAME' => 'The Netherlands',
+    'GEOIP_REGION' => 'ZH',
+    'GEOIP_LATITUDE' => '51.91790',
+    'GEOIP_LONGITUDE' => '4.49010',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.2',
+    'SSL_SESSION_ID' => '87d3fb78871f6efdacab9478fe821e90ec83106c3dfa9de874a9e748f8da0e85',
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-GCM-SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'HEAD',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1754961386.092132,
+    'REQUEST_TIME' => 1754961386,
+]

@@ -19397,3 +19397,91 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1754754502.501251,
     'REQUEST_TIME' => 1754754502,
 ]
+[12-Aug-2025 15:23:33 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Sizga ushbu amalni bajarishga ruhsat berilmagan. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php(207): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\web\ErrorAction))
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#10 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#12 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Yuborilgan ma`lumotlarni tekshirib bo`lmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php:209
+Stack trace:
+#0 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('login', Array)
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('site/login', Array)
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home3/uzmakonu/public_html/backend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'uz-UZ,uz;q=0.9,ko-KR;q=0.8,ko;q=0.7,en-US;q=0.6,en;q=0.5',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '292',
+    'HTTP_COOKIE' => 'advanced-frontend=021be6010e2b44f380cd4658762efad9; _csrf-frontend=a9f2f849d4c669de0bcf2ef1eba4f4b066b1ce8b8596f128892a05554753eb90a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Ore9bpKum44NILb3dvj6tGu3Nvli23Gg%22%3B%7D; advanced-backend=dbcf55d6c6a3adb7e93e9f92981c0f82; _csrf-backend=5f03961fe41492b43d1fc976a131897ef79cecbb0265c7bd8454c17414a8f1d8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Nn4h8YruI22jX52xAjb0qZqS2ArYlYbK%22%3B%7D',
+    'HTTP_HOST' => 'uzmakon.uz',
+    'HTTP_REFERER' => 'https://uzmakon.uz/backend/web/site/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ORIGIN' => 'https://uzmakon.uz',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_PRIORITY' => 'u=0, i',
+    'HTTP_X_HTTPS' => '1',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html',
+    'REMOTE_ADDR' => '213.230.114.57',
+    'REMOTE_PORT' => '23580',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/backend/web/site/login',
+    'REDIRECT_URL' => '/backend/web/site/login',
+    'REDIRECT_REQUEST_METHOD' => 'POST',
+    'GEOIP_ADDR' => '213.230.114.57',
+    'GEOIP_CITY' => 'Tashkent',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'UZ',
+    'GEOIP_COUNTRY_NAME' => 'Uzbekistan',
+    'GEOIP_REGION' => 'TK',
+    'GEOIP_LATITUDE' => '41.26150',
+    'GEOIP_LONGITUDE' => '69.21770',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_CHACHA20_POLY1305_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '256',
+    'SSL_CIPHER_ALGKEYSIZE' => '256',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/backend/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://uzmakon.uz/backend/web/site/login',
+    'SCRIPT_URL' => '/backend/web/site/login',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1754994212.308224,
+    'REQUEST_TIME' => 1754994212,
+]
