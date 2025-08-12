@@ -98,7 +98,8 @@ class UpdateReturnedForm extends Model
         $this->address = $order->address;
     }
 
-    public function getStatus(){
+    public function getStatus(): array
+    {
         return [
             OrdersReturn::STATUS_NEW => Yii::t("app", "New"),
             OrdersReturn::STATUS_READY_TO_DELIVERY => Yii::t("app", "Ready for delivery"),
@@ -109,7 +110,7 @@ class UpdateReturnedForm extends Model
         ];
     }
 
-    public function attributeLabels()
+    public function attributeLabels(): array
     {
         return [
             'id' => 'ID',

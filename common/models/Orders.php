@@ -257,6 +257,27 @@ class Orders extends ActiveRecord
         return parent::beforeSave($insert, $attr = NULL);
     }
 
+    public function insertFromOperatorReturned($order_from_operator_returned): int
+    {
+        $model = new self();
+        $model->product_id = $order_from_operator_returned->product_id;
+        $model->operator_id = $order_from_operator_returned->operator_id;
+        $model->full_name = $order_from_operator_returned->customer_name;
+        $model->phone = $order_from_operator_returned->customer_phone;
+        $model->user_id = 1;
+        $model->region_id = $order_from_operator_returned->region_id;
+        $model->district_id = $order_from_operator_returned->district_id;
+        $model->addres = $order_from_operator_returned->address;
+        $model->count = $order_from_operator_returned->count;
+        $model->competition = $order_from_operator_returned->delivery_type;
+        $model->comment = $order_from_operator_returned->comment;
+        $model->status = $order_from_operator_returned->status;
+        $model->returned_id = $order_from_operator_returned->id;
+        $model->save();
+
+        return $model->id;
+    }
+
     public function insertNew($product, $stream = null): bool
     {
         $this->product_id = $product->id;
