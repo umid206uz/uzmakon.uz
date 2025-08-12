@@ -7,7 +7,7 @@ use common\models\OperatorPaymentSearch;
 use common\models\Orders;
 use common\models\Regions;
 use common\models\Setting;
-use frontend\models\SignupForm;
+use operator\models\SignupForm;
 use operator\models\User;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
