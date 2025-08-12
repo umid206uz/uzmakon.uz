@@ -7,3 +7,4 @@ Yii::setAlias('@mini', dirname(dirname(__DIR__)) . '/mini');
 Yii::setAlias('@api', dirname(dirname(__DIR__)) . '/api');
 Yii::setAlias('@courier', dirname(dirname(__DIR__)) . '/courier');
 Yii::setAlias('@admin', dirname(dirname(__DIR__)) . '/admin');
+Yii::setAlias('@operator', dirname(dirname(__DIR__)) . '/operator');
