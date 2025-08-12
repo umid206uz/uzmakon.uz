@@ -1,11 +1,13 @@
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
+RewriteOptions inherit
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
+RewriteRule . index.php
 
-# END WordPress
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
