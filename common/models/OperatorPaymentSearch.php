@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
@@ -25,8 +26,9 @@ class OperatorPaymentSearch extends OperatorPayment
      */
     public function scenarios()
     {
-        // bypass scenarios() implementation in the parent class
-        return Model::scenarios();
+        $scenarios = parent::scenarios();
+        $scenarios['operator-payment-search'] = $scenarios[self::SCENARIO_DEFAULT];
+        return $scenarios;
     }
 
     /**
@@ -61,6 +63,10 @@ class OperatorPaymentSearch extends OperatorPayment
             'amount' => $this->amount,
             'status' => $this->status,
         ]);
+
+        if ($this->scenario === 'operator-payment-search') {
+            $query->andWhere(['operator_id' => Yii::$app->user->id]);
+        }
 
         if ($this->created_date != '') {
             $query->andFilterWhere(['between', 'created_date', strtotime($this->created_date), strtotime($this->created_date) + 3600 * 24]);
