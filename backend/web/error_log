@@ -86,3 +86,87 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1755062683.821656,
     'REQUEST_TIME' => 1755062683,
 ]
+[13-Aug-2025 11:38:08 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Sizga ushbu amalni bajarishga ruhsat berilmagan. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php(207): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\web\ErrorAction))
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#10 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#12 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "orders-return". in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php:543
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('orders-return', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Sahifa topilmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/uzmakonu/public_html/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+    'HTTP_COOKIE' => 'advanced-backend=479e5366c0fed00c4fbe24cf829fd21b; _csrf-backend=365637010ba8d15c0aa39ad9b8cdb2140c8c543886588aa2b78358d1471cca9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KPJ5bNoQtFaC8nWn2UYVzrhiiqEpZXlq%22%3B%7D; advanced-frontend=e7dc89e1b0cb2e357831ca2752f66075; _csrf-frontend=98bd2052b75a09eee3b6082b7b6ab483cb080f7e29935a2482b44dd8737a7b6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226WKWb4vhVFjJuVfJ0YVLLpKJhoE4wFyK%22%3B%7D',
+    'HTTP_HOST' => 'uzmakon.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_PRIORITY' => 'u=0, i',
+    'HTTP_TE' => 'trailers',
+    'HTTP_X_HTTPS' => '1',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html',
+    'REMOTE_ADDR' => '93.188.85.202',
+    'REMOTE_PORT' => '52023',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/backend/web/orders-return',
+    'REDIRECT_URL' => '/backend/web/orders-return',
+    'REDIRECT_REQUEST_METHOD' => 'GET',
+    'GEOIP_ADDR' => '93.188.85.202',
+    'GEOIP_CITY' => 'Tashkent',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'UZ',
+    'GEOIP_COUNTRY_NAME' => 'Uzbekistan',
+    'GEOIP_REGION' => 'TK',
+    'GEOIP_LATITUDE' => '41.26150',
+    'GEOIP_LONGITUDE' => '69.21770',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/backend/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://uzmakon.uz/backend/web/orders-return',
+    'SCRIPT_URL' => '/backend/web/orders-return',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'GET',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1755067088.01621,
+    'REQUEST_TIME' => 1755067088,
+]
