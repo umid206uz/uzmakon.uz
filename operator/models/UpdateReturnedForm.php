@@ -120,6 +120,7 @@ class UpdateReturnedForm extends Model
             'district_id' => Yii::t("app", "District"),
             'region_id' => Yii::t("app", "Region"),
             'delivery_type' => Yii::t("app", "Delivery type"),
+            'delivery_price' => Yii::t("app", "Delivery price"),
         ];
     }
 }
