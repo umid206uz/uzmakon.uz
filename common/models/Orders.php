@@ -51,7 +51,7 @@ class Orders extends ActiveRecord
      * {@inheritdoc}
      */
 
-    public static function tableName()
+    public static function tableName(): string
     {
         return 'orders';
     }
@@ -144,17 +144,21 @@ class Orders extends ActiveRecord
         return $this->_product;
     }
 
-    public function beforeValidate()
+    public function beforeValidate(): bool
     {
         $this->phone = Yii::$app->formatter->cleanPhone($this->phone);
         $this->additional_phone = Yii::$app->formatter->cleanPhone($this->additional_phone);
         $this->phone = Yii::$app->formatter->removePrefixIfValid($this->phone);
         $this->additional_phone = Yii::$app->formatter->removePrefixIfValid($this->additional_phone);
+        if ($this->scenario === 'create-order') {
+            $this->operator_id = Yii::$app->user->id;
+            $this->status = self::STATUS_READY_TO_DELIVERY;
+        }
 
         return parent::beforeValidate();
     }
 
-    public function beforeSave($insert, $attr = NULL)
+    public function beforeSave($insert, $attr = NULL): bool
     {
         $_user = $this->getUserStatic();
         $_product = $this->getProductStatic();
