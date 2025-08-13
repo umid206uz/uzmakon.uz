@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\db\ActiveQuery;
 use yii\db\ActiveRecord;
 
 /**
@@ -20,7 +21,7 @@ class OperatorPayment extends ActiveRecord
     /**
      * {@inheritdoc}
      */
-    public static function tableName()
+    public static function tableName(): string
     {
         return 'operator_payment';
     }
@@ -87,7 +88,7 @@ class OperatorPayment extends ActiveRecord
         }
     }
 
-    public function getOperator(): \yii\db\ActiveQuery
+    public function getOperator(): ActiveQuery
     {
         return $this->hasOne(User::className(), ['id' => 'operator_id']);
     }
