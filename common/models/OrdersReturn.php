@@ -92,6 +92,7 @@ class OrdersReturn extends ActiveRecord
             $model->customer_name = $order->full_name;
             $model->customer_phone = $order->phone;
             $model->comment = $order->comment;
+            $model->address = $order->addres;
             $model->price = $order->product->sale;
             $model->count = $order->count;
             $model->created_date = time();
