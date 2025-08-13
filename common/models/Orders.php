@@ -27,6 +27,7 @@ use yii\helpers\ArrayHelper;
  * @property int $is_hold
  * @property int|null $product_id
  * @property int|null $courier_id
+ * @property int|null $returned_id
  * @property string $take_time
  * @property string $addres
  * @property string $full_name
@@ -80,7 +81,7 @@ class Orders extends ActiveRecord
                     'product_id','control_id', 'status', 'user_id', 'oqim_id',
                     'delete', 'operator_id', 'count', 'courier_id', 'text',
                     'updated_date', 'district_id', 'region_id', 'qr_code',
-                    'take_time', 'is_then', 'is_hold'
+                    'take_time', 'is_then', 'is_hold', 'returned_id'
                 ], 'integer'
             ],
             [['addres', 'full_name', 'phone', 'comment', 'delivery_time'], 'string', 'max' => 255],
@@ -190,6 +191,7 @@ class Orders extends ActiveRecord
         }
 
         if ($this->status == self::STATUS_RETURNED){
+            (new OrdersReturn())->insertOrder($this);
             if ($this->oldAttributes['status'] == self::STATUS_DELIVERED){
                 $model = AdminOrders::findOne(['order_id' => $this->id]);
                 if ($model !== null && $model->status == AdminOrders::STATUS_NOT_PAID && $model->payed_date == null){
