@@ -159,7 +159,7 @@ class OperatorController extends Controller
 
     public function actionComeBack(): string
     {
-        $result = $this->findOrdersByStatus(Orders::STATUS_ARCHIVE);
+        $result = $this->findOrdersByStatus(Orders::STATUS_RETURNED_OPERATOR);
 
         return $this->render('come-back', [
             'model' => $result['orders'],
