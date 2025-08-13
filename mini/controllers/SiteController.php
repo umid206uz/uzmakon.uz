@@ -385,7 +385,8 @@ class SiteController extends Controller
         return ['output' => '', 'selected' => ''];
     }
 
-    private static function getTerritorialAdministration($region_id){
+    private static function getTerritorialAdministration($region_id): array
+    {
         return Regions::find()->select('code as id, name')->where(['parent_id' => $region_id])->asArray()->all();
     }
 
