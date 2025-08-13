@@ -92,19 +92,6 @@ JS
             ])?>
         </div>
         <div class="col-md-6">
-            <?= $form->field($model, 'delivery_type')->widget(Select2::classname(), [
-                'data' => [
-                    1 => Yii::t("app", "Delivery is paid"),
-                    0 => Yii::t("app", "Free shipping")
-                ],
-                'options' => ['placeholder' => Yii::t("app", "Select a delivery")]
-            ]);
-            ?>
-        </div>
-        <div class="col-md-6">
-            <?= $form->field($model,'delivery_price')->textInput(['value' => $model->delivery_price ?: 30000])?>
-        </div>
-        <div class="col-md-6">
             <?= $form->field($model, 'status')->widget(Select2::classname(), [
                 'data' => $model->getStatus(),
                 'options' => ['placeholder' => Yii::t("app", "Select a status")],
@@ -127,6 +114,19 @@ JS
                 ]
             ])->label('Olish vaqti');
             ?>
+        </div>
+        <div class="col-md-6">
+            <?= $form->field($model, 'delivery_type')->widget(Select2::classname(), [
+                'data' => [
+                    1 => Yii::t("app", "Delivery is paid"),
+                    0 => Yii::t("app", "Free shipping")
+                ],
+                'options' => ['placeholder' => Yii::t("app", "Select a delivery")]
+            ]);
+            ?>
+        </div>
+        <div class="col-md-6">
+            <?= $form->field($model,'delivery_price')->textInput(['value' => $model->delivery_price ?: 30000])?>
         </div>
         <div class="col-md-6">
             <?= $form->field($model, 'count')->widget(TouchSpin::classname(), [
