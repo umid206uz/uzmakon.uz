@@ -92,18 +92,19 @@ class UpdateForm extends Model
         $this->comment = $order->comment;
     }
 
-    public function getStatus(){
+    public function getStatus(): array
+    {
         return [
             Orders::STATUS_NEW => Yii::t("app", "New"),
             Orders::STATUS_READY_TO_DELIVERY => Yii::t("app", "Ready for delivery"),
             Orders::STATUS_THEN_TAKES => Yii::t("app", "Then takes"),
             Orders::STATUS_HOLD => Yii::t("app", "Hold"),
-            Orders::STATUS_ARCHIVE => Yii::t("app", "Archive"),
+            Orders::STATUS_RETURNED_OPERATOR => Yii::t("app", "Archive"),
             Orders::STATUS_BLACK_LIST => Yii::t("app", "Black list"),
         ];
     }
 
-    public function attributeLabels()
+    public function attributeLabels(): array
     {
         return [
             'id' => 'ID',
