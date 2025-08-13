@@ -42,9 +42,9 @@ class OperatorPayment extends ActiveRecord
     public function rules()
     {
         return [
-            [['operator_id', 'created_date'], 'required'],
             [['amount'], 'required', 'message' => Yii::t("app", "Please enter the amount")],
             [['amount'], 'integer', 'message' => Yii::t("app", "Enter the amount in numbers")],
+            [['operator_id', 'status', 'created_date'], 'safe', 'on' => 'create-operator-payment'],
             [['operator_id', 'status', 'created_date', 'payed_date'], 'integer'],
             ['amount', 'checkAmount'],
             ['amount','checkPayment'],
@@ -82,7 +82,7 @@ class OperatorPayment extends ActiveRecord
     }
 
     public function checkCard($attribute, $params){
-        if($this->operator->card == '') {
+        if(!Yii::$app->formatter->currentUser()->card) {
             $this->addError($attribute, Yii::t("app","Please enter your personal plastic card from the Profile menu"));
         }
     }
