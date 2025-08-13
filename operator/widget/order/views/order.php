@@ -40,10 +40,6 @@ JS
                         <span class="label label-warning"><?=Yii::t("app","Hold")?></span>
                         <span class="label label-info"><span class="fa fa-caret-right"></span></span>
                     <?php endif;?>
-                    <?php if ($item->is_feedback == Orders::FEEDBACK_TRUE && $action != 'feedback'):?>
-                        <span class="label label-warning"><?=Yii::t("app","Feedback")?></span>
-                        <span class="label label-info"><span class="fa fa-caret-right"></span></span>
-                    <?php endif;?>
                     <span class="label <?=Yii::$app->status->colorForOperatorOrCourierStatus($item->status)?>"><?=Yii::$app->status->allStatusTranslate($item->status)?></span>
                 </div>
             </div>
@@ -55,9 +51,6 @@ JS
                     <strong><i class="fa fa-clock-o"></i> <?=Yii::t("app","Order date")?>:</strong> <?=Yii::$app->formatter->getDate($item->text)?><br>
                     <?php if ($item->status == Orders::STATUS_THEN_TAKES):?>
                         <strong><i class="fa fa-clock-o"></i> <?=Yii::t("app","Take time")?>:</strong> <?=Yii::$app->formatter->getDateWithoutTime($item->take_time)?>
-                    <?php endif;?>
-                    <?php if ($item->is_feedback == Orders::FEEDBACK_TRUE && $action == 'feedback'):?>
-                        <strong><i class="fa fa-money"></i> <?=Yii::t("app","Payment")?>:</strong> <span class="label label-danger"><?=Yii::t("app","Ikki baravar to'lov")?></span>
                     <?php endif;?>
                 </div>
                 <hr>
