@@ -29,6 +29,13 @@ class OperatorPayment extends ActiveRecord
      * {@inheritdoc}
      */
 
+    public function scenarios()
+    {
+        $scenarios = parent::scenarios();
+        $scenarios['create-operator-payment'] = $scenarios[self::SCENARIO_DEFAULT];
+        return $scenarios;
+    }
+
     const STATUS_PAYED = 1;
     const STATUS_NOT_PAYED = 0;
 
@@ -43,6 +50,16 @@ class OperatorPayment extends ActiveRecord
             ['amount','checkPayment'],
             ['operator_id', 'checkCard']
         ];
+    }
+
+    public function beforeSave($insert): bool
+    {
+        if ($this->scenario === 'create-operator-payment') {
+            $this->operator_id = Yii::$app->user->id;
+            $this->status = self::STATUS_NOT_PAYED;
+            $this->created_date = time();
+        }
+        return parent::beforeSave($insert);
     }
 
     public function checkAmount($attribute, $params){
