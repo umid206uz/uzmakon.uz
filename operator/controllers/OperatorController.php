@@ -60,7 +60,7 @@ class OperatorController extends Controller
 
     public function actionIndex(): string
     {
-        $query = Orders::find()->where(['status' => Orders::STATUS_NEW, 'operator_id' => null])->orWhere(['status' => Orders::STATUS_NEW, 'operator_id' => Yii::$app->user->id])->orderBy(['operator_id' => SORT_DESC, 'id' => SORT_DESC]);
+        $query = Orders::find()->where(['status' => Orders::STATUS_NEW, 'operator_id' => null])->orWhere(['status' => Orders::STATUS_NEW, 'operator_id' => Yii::$app->user->id])->orderBy(['id' => SORT_DESC]);
 
         $countQuery = clone $query;
         $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 12]);
