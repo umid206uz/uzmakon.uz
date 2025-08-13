@@ -18,7 +18,7 @@ use kartik\touchspin\TouchSpin;
 $this->registerJs(<<<JS
 $(document).ready(function ($){
     let status = $order->status;
-    let control = $order->control_id;
+    let control = $order->delivery_type;
     if (control == 1){
         $('.field-updatereturnedform-delivery_price').css('display', 'block');
     }else {
