@@ -18,6 +18,12 @@ use kartik\touchspin\TouchSpin;
 $this->registerJs(<<<JS
 $(document).ready(function ($){
     let status = $order->status;
+    let control = $order->control_id;
+    if (control == 1){
+        $('.field-updatereturnedform-delivery_price').css('display', 'block');
+    }else {
+        $('.field-updatereturnedform-delivery_price').css('display', 'none');
+    }
     if (status != 5){
         $('.field-updatereturnedform-take_time').css('display', 'none');
     }
@@ -29,6 +35,15 @@ $('#updatereturnedform-status').change(function (){
         $('.field-updatereturnedform-take_time').css('display', 'block');
     }else{
         $('.field-updatereturnedform-take_time').css('display', 'none');
+    }
+});
+$('#updatereturnedform-delivery_type').change(function (){
+    let _this = $(this);
+    let control = _this.val();
+    if (control == 1){
+        $('.field-updateform-delivery_price').css('display', 'block');
+    }else{
+        $('.field-updateform-delivery_price').css('display', 'none');
     }
 });
 
@@ -77,6 +92,19 @@ JS
             ])?>
         </div>
         <div class="col-md-6">
+            <?= $form->field($model, 'delivery_type')->widget(Select2::classname(), [
+                'data' => [
+                    1 => Yii::t("app", "Delivery is paid"),
+                    0 => Yii::t("app", "Free shipping")
+                ],
+                'options' => ['placeholder' => Yii::t("app", "Select a delivery")]
+            ]);
+            ?>
+        </div>
+        <div class="col-md-6">
+            <?= $form->field($model,'delivery_price')->textInput(['value' => $model->delivery_price ?: 30000])?>
+        </div>
+        <div class="col-md-6">
             <?= $form->field($model, 'status')->widget(Select2::classname(), [
                 'data' => $model->getStatus(),
                 'options' => ['placeholder' => Yii::t("app", "Select a status")],
@@ -98,16 +126,6 @@ JS
                     'todayHighlight' => true
                 ]
             ])->label('Olish vaqti');
-            ?>
-        </div>
-        <div class="col-md-6">
-            <?= $form->field($model, 'delivery_type')->widget(Select2::classname(), [
-                'data' => [
-                    1 => Yii::t("app", "Delivery is paid"),
-                    0 => Yii::t("app", "Free shipping")
-                ],
-                'options' => ['placeholder' => Yii::t("app", "Select a delivery")]
-            ]);
             ?>
         </div>
         <div class="col-md-6">

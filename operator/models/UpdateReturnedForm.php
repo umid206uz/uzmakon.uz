@@ -58,27 +58,25 @@ class UpdateReturnedForm extends Model
         ];
     }
 
-    public function OrderUpdate($order){
-
+    public function OrderUpdate($order): bool
+    {
         if ($order->operator_id === null) {
             return false;
         }
 
-        if ($this->status == 0) {
+        if ($this->status == OrdersReturn::STATUS_NEW) {
             $order->operator_id = null;
             $order->take_time = null;
         }
 
-        if ($this->take_time) {
-            $order->take_time = strtotime($this->take_time);
-        }
-
+        $order->take_time = strtotime($this->take_time) ?: $order->take_time;
         $order->status = $this->status;
         $order->region_id = $this->region_id;
         $order->district_id = $this->district_id;
         $order->comment = $this->comment;
         $order->address = $this->address;
         $order->delivery_type = $this->delivery_type;
+        $order->delivery_price = $this->delivery_price;
         $order->count = $this->count;
         if ($this->status == OrdersReturn::STATUS_READY_TO_DELIVERY){
             $order->new_order_id = (new Orders())->insertFromOperatorReturned($order);
@@ -92,6 +90,7 @@ class UpdateReturnedForm extends Model
         }
         $this->count = $order->count;
         $this->delivery_type = $order->delivery_type;
+        $this->delivery_price = $order->delivery_price;
         $this->region_id = $order->region_id;
         $this->district_id = $order->district_id;
         $this->comment = $order->comment;
