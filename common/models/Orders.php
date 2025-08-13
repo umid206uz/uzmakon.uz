@@ -169,6 +169,14 @@ class Orders extends ActiveRecord
                 $_product->save(false);
             }
 
+            if ($this->returned_id){
+                $returned = OrdersReturn::findOne([$this->returned_id]);
+                if ($returned){
+                    $returned->status = OrdersReturn::STATUS_DELIVERED;
+                    $returned->save();
+                }
+            }
+
             if ($_product->status == 1) {
 
                 if ($_product->charity == 0) {
@@ -192,6 +200,13 @@ class Orders extends ActiveRecord
 
         if ($this->status == self::STATUS_RETURNED){
             (new OrdersReturn())->insertOrder($this);
+            if ($this->returned_id){
+                $returned = OrdersReturn::findOne([$this->returned_id]);
+                if ($returned){
+                    $returned->status = OrdersReturn::STATUS_RETURNED;
+                    $returned->save();
+                }
+            }
             if ($this->oldAttributes['status'] == self::STATUS_DELIVERED){
                 $model = AdminOrders::findOne(['order_id' => $this->id]);
                 if ($model !== null && $model->status == AdminOrders::STATUS_NOT_PAID && $model->payed_date == null){
@@ -231,8 +246,17 @@ class Orders extends ActiveRecord
             $this->SendStatusTelegram("buyurtma holdga tushdi.");
         }
 
-        if($this->status == self::STATUS_PREPARING && $_user->status_preparing == 1){
-            $this->SendStatusTelegram("buyurtma Tayyorlanmoqda.");
+        if($this->status == self::STATUS_PREPARING){
+            if ($this->returned_id){
+                $returned = OrdersReturn::findOne([$this->returned_id]);
+                if ($returned){
+                    $returned->status = OrdersReturn::STATUS_PREPARING;
+                    $returned->save();
+                }
+            }
+            if ($_user->status_preparing == 1){
+                $this->SendStatusTelegram("buyurtma Tayyorlanmoqda.");
+            }
         }
 
         if ($this->status == self::STATUS_BLACK_LIST){
@@ -249,6 +273,13 @@ class Orders extends ActiveRecord
         }
 
         if ($this->status == self::STATUS_BEING_DELIVERED) {
+            if ($this->returned_id){
+                $returned = OrdersReturn::findOne([$this->returned_id]);
+                if ($returned){
+                    $returned->status = OrdersReturn::STATUS_BEING_DELIVERED;
+                    $returned->save();
+                }
+            }
             $this->delivery_time = time();
             $this->qr_code = $this->qr_code ?? $this->id . time();
             if ($_user->status_being_delivered == 1){
