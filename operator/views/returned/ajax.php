@@ -41,9 +41,9 @@ $('#updatereturnedform-delivery_type').change(function (){
     let _this = $(this);
     let control = _this.val();
     if (control == 1){
-        $('.field-updateform-delivery_price').css('display', 'block');
+        $('.field-updatereturnedform-delivery_price').css('display', 'block');
     }else{
-        $('.field-updateform-delivery_price').css('display', 'none');
+        $('.field-updatereturnedform-delivery_price').css('display', 'none');
     }
 });
 
