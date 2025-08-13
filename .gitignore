@@ -49,6 +49,7 @@ phpunit.phar
 /api/web/index.php
 /api/web/index-test.php
 /api/web/robots.txt
+/api/web/error_log
 /backend/web/index.php
 /backend/web/index-test.cd
 /backend/web/robots.txt
