@@ -102,17 +102,16 @@ JS
             ?>
         </div>
         <div class="col-md-6">
-            <?= $form->field($model, 'take_time')->widget(DatePicker::classname(), [
-                'name' => 'check_issue_date',
-                'value' => date('d.mm.yyyy', strtotime('+2 days')),
-                'options' => [
-                    'placeholder' => Yii::t("app", "Set the pick-up time"),
-                ],
+            <?= $form->field($model, 'count')->widget(TouchSpin::classname(), [
+                'name' => 'volume',
+                'options' => ['placeholder' => Yii::t("app", "Enter the number")],
                 'pluginOptions' => [
-                    'format' => 'd.mm.yyyy',
-                    'todayHighlight' => true
+                    'buttonup_class' => 'btn btn-primary',
+                    'buttondown_class' => 'btn btn-info',
+                    'buttonup_txt' => '<i class="glyphicon glyphicon-plus-sign"></i>',
+                    'buttondown_txt' => '<i class="glyphicon glyphicon-minus-sign"></i>'
                 ]
-            ])->label('Olish vaqti');
+            ]);
             ?>
         </div>
         <div class="col-md-6">
@@ -129,16 +128,17 @@ JS
             <?= $form->field($model,'delivery_price')->textInput(['value' => $model->delivery_price ?: 30000])?>
         </div>
         <div class="col-md-6">
-            <?= $form->field($model, 'count')->widget(TouchSpin::classname(), [
-                'name' => 'volume',
-                'options' => ['placeholder' => Yii::t("app", "Enter the number")],
+            <?= $form->field($model, 'take_time')->widget(DatePicker::classname(), [
+                'name' => 'check_issue_date',
+                'value' => date('d.mm.yyyy', strtotime('+2 days')),
+                'options' => [
+                    'placeholder' => Yii::t("app", "Set the pick-up time"),
+                ],
                 'pluginOptions' => [
-                    'buttonup_class' => 'btn btn-primary',
-                    'buttondown_class' => 'btn btn-info',
-                    'buttonup_txt' => '<i class="glyphicon glyphicon-plus-sign"></i>',
-                    'buttondown_txt' => '<i class="glyphicon glyphicon-minus-sign"></i>'
+                    'format' => 'd.mm.yyyy',
+                    'todayHighlight' => true
                 ]
-            ]);
+            ])->label('Olish vaqti');
             ?>
         </div>
         <div class="col-md-12">
