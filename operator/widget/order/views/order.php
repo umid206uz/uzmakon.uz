@@ -32,14 +32,6 @@ JS
                     <span class="caption-subject font-<?=Yii::$app->status->colorForOperatorOrCourier($item->status)?> bold uppercase">ID: #<?=$item->id?></span>
                 </div>
                 <div class="actions pull-right">
-                    <?php if ($item->is_then == 1):?>
-                        <span class="label label-warning"><?=Yii::t("app","Then takes")?></span>
-                        <span class="label label-info"><span class="fa fa-caret-right"></span></span>
-                    <?php endif;?>
-                    <?php if ($item->is_hold == 1):?>
-                        <span class="label label-warning"><?=Yii::t("app","Hold")?></span>
-                        <span class="label label-info"><span class="fa fa-caret-right"></span></span>
-                    <?php endif;?>
                     <span class="label <?=Yii::$app->status->colorForOperatorOrCourierStatus($item->status)?>"><?=Yii::$app->status->allStatusTranslate($item->status)?></span>
                 </div>
             </div>
