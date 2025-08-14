@@ -3,6 +3,7 @@
 namespace operator\controllers;
 
 use common\models\Orders;
+use common\models\OrdersReturn;
 use common\models\Regions;
 use common\models\Setting;
 use operator\models\User;
@@ -268,10 +269,10 @@ class OperatorController extends Controller
     {
         $key = Yii::$app->request->get('key');
         if(Yii::$app->request->get('key')){
-            $query = Orders::find()
+            $query = OrdersReturn::find()
                 ->where(['like', 'id', $key])
-                ->orWhere(['like', 'phone', $key])
-                ->orWhere(['like', 'full_name', $key])
+                ->orWhere(['like', 'customer_phone', $key])
+                ->orWhere(['like', 'customer_name', $key])
                 ->andWhere(['operator_id' => Yii::$app->user->id]);
         }
 

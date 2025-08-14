@@ -2,9 +2,9 @@
 
 /* @var $this yii\web\View */
 /* @var $pagination yii\data\Pagination */
-/* @var $counts common\models\Orders */
-/* @var $model common\models\Orders */
-/* @var $item common\models\Orders */
+/* @var $counts common\models\OrdersReturn */
+/* @var $model common\models\OrdersReturn */
+/* @var $item common\models\OrdersReturn */
 /* @var $key string */
 
 use operator\assets\AppAsset;
