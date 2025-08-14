@@ -306,7 +306,8 @@ class Orders extends ActiveRecord
         $model->district_id = $order_from_operator_returned->district_id;
         $model->addres = $order_from_operator_returned->address;
         $model->count = $order_from_operator_returned->count;
-        $model->competition = $order_from_operator_returned->delivery_type;
+        $model->control_id = $order_from_operator_returned->delivery_type;
+        $model->competition = $order_from_operator_returned->delivery_price;
         $model->comment = $order_from_operator_returned->comment;
         $model->status = $order_from_operator_returned->status;
         $model->returned_id = $order_from_operator_returned->id;
