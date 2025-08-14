@@ -10,7 +10,7 @@ use operator\widget\alert\AlertWidget;
 use operator\widget\count\CountWidget;
 use yii\widgets\LinkPager;
 use yii\bootstrap\Modal;
-use operator\widget\order\OrdersWidget;
+use operator\widget\orders\OrdersWidget;
 
 $this->title = Yii::t("app", "New orders");
 $this->registerJs(<<<JS

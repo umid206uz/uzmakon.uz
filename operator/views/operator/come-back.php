@@ -8,7 +8,7 @@
 
 use operator\widget\alert\AlertWidget;
 use operator\widget\count\CountWidget;
-use operator\widget\order\OrdersWidget;
+use operator\widget\orders\OrdersWidget;
 use yii\widgets\LinkPager;
 
 $this->title = Yii::t("app", "Returned orders");

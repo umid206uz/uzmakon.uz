@@ -13,7 +13,7 @@ use operator\widget\count\CountWidget;
 use yii\web\View;
 use yii\widgets\LinkPager;
 use yii\bootstrap\Modal;
-use operator\widget\order\OrdersWidget;
+use operator\widget\orders\OrdersWidget;
 use yii\helpers\Url;
 
 $this->title = "Qidiruv natijalari";

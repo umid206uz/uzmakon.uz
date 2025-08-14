@@ -1,5 +1,5 @@
 <?php
-namespace operator\widget\order;
+namespace operator\widget\orders;
 
 use yii\bootstrap\Widget;
 
