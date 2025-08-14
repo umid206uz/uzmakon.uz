@@ -13,7 +13,7 @@ use operator\widget\count\CountWidget;
 use yii\web\View;
 use yii\widgets\LinkPager;
 use yii\bootstrap\Modal;
-use operator\widget\order\OrderWidget;
+use operator\widget\order\OrdersWidget;
 use yii\helpers\Url;
 
 $this->title = "Qidiruv natijalari";
@@ -43,7 +43,7 @@ $this->registerCssFile(Yii::$app->request->BaseUrl . 'pages/css/error.min.css', 
                         <div class="portlet-body">
                             <div class="row">
                                 <?php foreach ($model as $item):?>
-                                    <?= OrderWidget::widget([
+                                    <?= OrdersWidget::widget([
                                         'model' => $item
                                     ])?>
                                 <?php endforeach;?>

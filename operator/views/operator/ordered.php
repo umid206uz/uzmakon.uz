@@ -8,7 +8,7 @@
 
 use operator\widget\alert\AlertWidget;
 use operator\widget\count\CountWidget;
-use operator\widget\order\OrderWidget;
+use operator\widget\order\OrdersWidget;
 use yii\widgets\LinkPager;
 
 $this->title = Yii::t("app", "Delivered orders");
@@ -36,7 +36,7 @@ $this->title = Yii::t("app", "Delivered orders");
                 <div class="portlet-body">
                     <div class="row">
                         <?php foreach ($model as $item):?>
-                            <?= OrderWidget::widget([
+                            <?= OrdersWidget::widget([
                                 'model' => $item
                             ])?>
                         <?php endforeach;?>

@@ -10,7 +10,7 @@ use operator\widget\alert\AlertWidget;
 use operator\widget\count\CountWidget;
 use yii\widgets\LinkPager;
 use yii\bootstrap\Modal;
-use operator\widget\order\OrderWidget;
+use operator\widget\order\OrdersWidget;
 
 $this->title = Yii::t("app", "New orders");
 $this->registerJs(<<<JS
@@ -124,7 +124,7 @@ JS
                     <div class="portlet-body">
                         <div class="row">
                             <?php foreach ($model as $item):?>
-                                <?= OrderWidget::widget([
+                                <?= OrdersWidget::widget([
                                     'model' => $item
                                 ])?>
                             <?php endforeach;?>
