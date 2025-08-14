@@ -39,7 +39,7 @@ JS
                 <div>
                     <strong><i class="fa fa-user"></i> <?=Yii::t("app","Customer")?>:</strong> <?= Html::encode($item->customer_name) ?><br>
                     <strong><i class="fa fa-phone"></i> <?=Yii::t("app","Phone number")?>:</strong>
-                    <a id="phone_id_<?=$item->id?>" href="tel:<?=($item->operator_id && $item->operator_id == $operator_id ? $item->phone: null)?>"><?=Yii::$app->formatter->asPhoneOperator($item->phone, $item, $operator_id)?></a><br>
+                    <a id="phone_id_<?=$item->id?>" href="tel:<?=($item->operator_id && $item->operator_id == $operator_id ? $item->customer_phone: null)?>"><?=Yii::$app->formatter->asPhoneOperator($item->customer_phone, $item, $operator_id)?></a><br>
                     <strong><i class="fa fa-clock-o"></i> <?=Yii::t("app","Order date")?>:</strong> <?=Yii::$app->formatter->getDate($item->created_date)?><br>
                     <?php if ($item->status == OrdersReturn::STATUS_THEN_TAKES):?>
                         <strong><i class="fa fa-clock-o"></i> <?=Yii::t("app","Take time")?>:</strong> <?=Yii::$app->formatter->getDateWithoutTime($item->take_time)?>
