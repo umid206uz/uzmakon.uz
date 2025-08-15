@@ -27,7 +27,7 @@ class Status extends Formatter {
             return '<span class="label bg-black-active color-palette">' . Yii::t("app","Black list") .  '</span>';
         } elseif ($status === Orders::STATUS_THEN_TAKES){
             return '<span class="label bg-navy color-palette">' . Yii::t("app","Then takes") .  '</span>';
-        } elseif ($status === Orders::STATUS_ARCHIVE){
+        } elseif ($status === Orders::STATUS_RETURNED_OPERATOR){
             return '<span class="label label-danger">' . Yii::t("app","Archive") .  '</span>';
         } elseif ($status === Orders::STATUS_COURIER_RETURNED){
             return '<span class="label label-danger">' . Yii::t("app","Returned (Courier)") .  '</span>';
