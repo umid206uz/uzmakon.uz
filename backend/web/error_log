@@ -436,3 +436,268 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1755091956.380509,
     'REQUEST_TIME' => 1755091956,
 ]
+[14-Aug-2025 08:02:39 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Sizga ushbu amalni bajarishga ruhsat berilmagan. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php(207): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\web\ErrorAction))
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#10 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#12 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Yuborilgan ma`lumotlarni tekshirib bo`lmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php:209
+Stack trace:
+#0 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('login', Array)
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('site/login', Array)
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home3/uzmakonu/public_html/backend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'uz-UZ,uz;q=0.9,ko-KR;q=0.8,ko;q=0.7,en-US;q=0.6,en;q=0.5',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '292',
+    'HTTP_COOKIE' => 'advanced-frontend=0cf1fcf6861f198cd5eb5929fae8d4cc; _csrf-frontend=c0f43bb6f90de1cc7e9e4af459a9822df738d792778ce2a90437a5e62a3f6642a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pF1RUNoLKAyN2X2XmvIo3F6K9IZbXDxE%22%3B%7D; advanced-backend=fd69f9df26fe692cc8992458d991808b; _csrf-backend=75a3494128ce5d0b18f721ca1aba6c570079d669cb26d1dcd9fad5d72d4f6585a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-Ua3ZIgCuHKVumRnJQn2ZQxgAvrYP6CL%22%3B%7D',
+    'HTTP_HOST' => 'uzmakon.uz',
+    'HTTP_REFERER' => 'https://uzmakon.uz/backend/web/site/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Not?A_Brand";v="99", "Samsung Internet";v="28.0", "Chromium";v="130"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Android"',
+    'HTTP_ORIGIN' => 'https://uzmakon.uz',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_PRIORITY' => 'u=0, i',
+    'HTTP_X_HTTPS' => '1',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html',
+    'REMOTE_ADDR' => '213.230.78.161',
+    'REMOTE_PORT' => '47715',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/backend/web/site/login',
+    'REDIRECT_URL' => '/backend/web/site/login',
+    'REDIRECT_REQUEST_METHOD' => 'POST',
+    'GEOIP_ADDR' => '213.230.78.161',
+    'GEOIP_CITY' => 'Tashkent',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'UZ',
+    'GEOIP_COUNTRY_NAME' => 'Uzbekistan',
+    'GEOIP_REGION' => 'TK',
+    'GEOIP_LATITUDE' => '41.26150',
+    'GEOIP_LONGITUDE' => '69.21770',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/backend/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://uzmakon.uz/backend/web/site/login',
+    'SCRIPT_URL' => '/backend/web/site/login',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1755140558.830759,
+    'REQUEST_TIME' => 1755140558,
+]
+[14-Aug-2025 17:23:49 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Sizga ushbu amalni bajarishga ruhsat berilmagan. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php(207): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\web\ErrorAction))
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#10 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#12 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Yuborilgan ma`lumotlarni tekshirib bo`lmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php:209
+Stack trace:
+#0 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('login', Array)
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('site/login', Array)
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home3/uzmakonu/public_html/backend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'uz-UZ,uz;q=0.9,ko-KR;q=0.8,ko;q=0.7,en-US;q=0.6,en;q=0.5',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '292',
+    'HTTP_COOKIE' => 'advanced-frontend=1607af31ba3629d41970499cf97f01bb; _csrf-frontend=813aed008376d3e3449960fc00a63e42c7e5f9a85cfe1dcd307ba62f5124adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22r4wyA0FDdGWt6nLMkA64-ZHSODACC7v7%22%3B%7D; advanced-backend=00346237ea9af85ae5ff7d8569f75e58; _csrf-backend=710e7093051ceb2e08c23f224089e86971aa87709caf9e9dd3a94d6f4ccc284da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BJRIwVx1tuWk1efMdO7vsYemoHL18d8k%22%3B%7D',
+    'HTTP_HOST' => 'uzmakon.uz',
+    'HTTP_REFERER' => 'https://uzmakon.uz/backend/web/site/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ORIGIN' => 'https://uzmakon.uz',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_PRIORITY' => 'u=0, i',
+    'HTTP_X_HTTPS' => '1',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html',
+    'REMOTE_ADDR' => '213.230.114.57',
+    'REMOTE_PORT' => '65398',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/backend/web/site/login',
+    'REDIRECT_URL' => '/backend/web/site/login',
+    'REDIRECT_REQUEST_METHOD' => 'POST',
+    'GEOIP_ADDR' => '213.230.114.57',
+    'GEOIP_CITY' => 'Tashkent',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'UZ',
+    'GEOIP_COUNTRY_NAME' => 'Uzbekistan',
+    'GEOIP_REGION' => 'TK',
+    'GEOIP_LATITUDE' => '41.26150',
+    'GEOIP_LONGITUDE' => '69.21770',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_CHACHA20_POLY1305_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '256',
+    'SSL_CIPHER_ALGKEYSIZE' => '256',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/backend/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://uzmakon.uz/backend/web/site/login',
+    'SCRIPT_URL' => '/backend/web/site/login',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1755174229.163513,
+    'REQUEST_TIME' => 1755174229,
+]
+[14-Aug-2025 23:36:55 Asia/Tashkent] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Sizga ushbu amalni bajarishga ruhsat berilmagan. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php(207): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\web\ErrorAction))
+#8 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#9 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#10 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#12 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Yuborilgan ma`lumotlarni tekshirib bo`lmadi. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Controller.php:209
+Stack trace:
+#0 /home3/uzmakonu/public_html/backend/controllers/SiteController.php(56): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php(179): backend\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('login', Array)
+#3 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('site/login', Array)
+#4 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home3/uzmakonu/public_html/backend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'uz-UZ,uz;q=0.9,ko-KR;q=0.8,ko;q=0.7,en-US;q=0.6,en;q=0.5',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '292',
+    'HTTP_COOKIE' => 'advanced-frontend=4904f9119d6683adb40063b042488c56; _csrf-frontend=03cb037dfcbba6f7de13c6740205768ae6f5c9b94a8dc4ac051c6e3084b5223ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22DTrN60jtvJ4hpBYqHzciClwMANMqIwTe%22%3B%7D; advanced-backend=d59094a17adcb3321ef45b37813f910d; _csrf-backend=0a14dc92af16fa635fc2b3f9bda81ba7c55d2fc92f5262d686ad3a431d443d72a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OTS7ODfeSQXTBvgv5qh3XDkSd3EN6BwG%22%3B%7D',
+    'HTTP_HOST' => 'uzmakon.uz',
+    'HTTP_REFERER' => 'https://uzmakon.uz/backend/web/site/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Not?A_Brand";v="99", "Samsung Internet";v="28.0", "Chromium";v="130"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Android"',
+    'HTTP_ORIGIN' => 'https://uzmakon.uz',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_PRIORITY' => 'u=0, i',
+    'HTTP_X_HTTPS' => '1',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html',
+    'REMOTE_ADDR' => '57.129.66.214',
+    'REMOTE_PORT' => '33024',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/backend/web/site/login',
+    'REDIRECT_URL' => '/backend/web/site/login',
+    'REDIRECT_REQUEST_METHOD' => 'POST',
+    'GEOIP_ADDR' => '57.129.66.214',
+    'GEOIP_CITY' => 'Frankfurt am Main',
+    'GEOIP_POSTAL_CODE' => '60306',
+    'GEOIP_CONTINENT_CODE' => 'EU',
+    'GEOIP_COUNTRY_CODE' => 'DE',
+    'GEOIP_COUNTRY_NAME' => 'Germany',
+    'GEOIP_REGION' => 'HE',
+    'GEOIP_LATITUDE' => '50.11010',
+    'GEOIP_LONGITUDE' => '8.67210',
+    'HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'X_SPDY' => 'HTTP2',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/backend/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://uzmakon.uz/backend/web/site/login',
+    'SCRIPT_URL' => '/backend/web/site/login',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1755196615.094264,
+    'REQUEST_TIME' => 1755196615,
+]

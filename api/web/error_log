@@ -172,3 +172,128 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1755054546.760221,
     'REQUEST_TIME' => 1755054546,
 ]
+[14-Aug-2025 06:16:40 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_HOST' => 'api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'curl/7.29.0',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '193.111.61.142',
+    'REMOTE_PORT' => '60560',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '193.111.61.142',
+    'GEOIP_CITY' => 'Rotterdam',
+    'GEOIP_POSTAL_CODE' => '3011',
+    'GEOIP_CONTINENT_CODE' => 'EU',
+    'GEOIP_COUNTRY_CODE' => 'NL',
+    'GEOIP_COUNTRY_NAME' => 'The Netherlands',
+    'GEOIP_REGION' => 'ZH',
+    'GEOIP_LATITUDE' => '51.91790',
+    'GEOIP_LONGITUDE' => '4.49010',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.2',
+    'SSL_SESSION_ID' => 'b3cf63f13dfe3c273c681162c55da9cd25e88fe7348727cb153f037471155f8e',
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-GCM-SHA256',
+    'SSL_CIPHER_USEKEYSIZE' => '128',
+    'SSL_CIPHER_ALGKEYSIZE' => '128',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'HEAD',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1755134200.668562,
+    'REQUEST_TIME' => 1755134200,
+]
+[15-Aug-2025 10:04:56 Asia/Tashkent] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('error', Array)
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Request.php:290
+Stack trace:
+#0 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/web/Application.php(83): yii\web\Request->resolve()
+#1 /home3/uzmakonu/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/uzmakonu/public_html/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/bin:/usr/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'www.api.uzmakon.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA' => '"Chromium";v="139", "Not:A-Brand";v="24", "Brave";v="139"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_GPC' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'DOCUMENT_ROOT' => '/home3/uzmakonu/public_html/api/web',
+    'REMOTE_ADDR' => '64.227.137.63',
+    'REMOTE_PORT' => '46418',
+    'SERVER_ADDR' => '31.131.26.116',
+    'SERVER_NAME' => 'www.api.uzmakon.uz',
+    'SERVER_ADMIN' => 'webmaster@api.uzmakon.uz',
+    'SERVER_PORT' => '443',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/',
+    'GEOIP_ADDR' => '64.227.137.63',
+    'GEOIP_CITY' => 'Bengaluru',
+    'GEOIP_POSTAL_CODE' => '560100',
+    'GEOIP_CONTINENT_CODE' => 'AS',
+    'GEOIP_COUNTRY_CODE' => 'IN',
+    'GEOIP_COUNTRY_NAME' => 'India',
+    'GEOIP_REGION' => 'KA',
+    'GEOIP_LATITUDE' => '12.96340',
+    'GEOIP_LONGITUDE' => '77.58550',
+    'HTTPS' => 'on',
+    'SSL_PROTOCOL' => 'TLSv1.3',
+    'SSL_CIPHER' => 'TLS_AES_256_GCM_SHA384',
+    'SSL_CIPHER_USEKEYSIZE' => '256',
+    'SSL_CIPHER_ALGKEYSIZE' => '256',
+    'SCRIPT_FILENAME' => '/home3/uzmakonu/public_html/api/web/index.php',
+    'QUERY_STRING' => '',
+    'SCRIPT_URI' => 'https://www.api.uzmakon.uz/',
+    'SCRIPT_URL' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'GET',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1755234296.829844,
+    'REQUEST_TIME' => 1755234296,
+]
