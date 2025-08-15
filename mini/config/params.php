@@ -1,6 +1,0 @@
-<?php
-return [
-    'adminEmail' => 'admin@example.com',
-    'og_site_name' => ['property' => 'og:site_name', 'content' => 'UzMakon.uz'],
-    'og_url_name' => ['property' => 'og:url_name', 'content' => 'UzMakon.uz'],
-];
