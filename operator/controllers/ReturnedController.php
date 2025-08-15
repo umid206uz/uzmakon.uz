@@ -254,7 +254,7 @@ class ReturnedController extends Controller
         ]);
     }
 
-    public function actionSearch()
+    public function actionSearch(): string
     {
         $key = Yii::$app->request->get('key');
         if(Yii::$app->request->get('key')){

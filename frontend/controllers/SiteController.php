@@ -72,7 +72,7 @@ class SiteController extends Controller
         exit;
     }
 
-    public function actionIndex()
+    public function actionIndex(): string
     {
         $setting = Setting::findOne(1);
         $seo = Pages::findOne(1);

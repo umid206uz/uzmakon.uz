@@ -34,7 +34,7 @@ class OperatorController extends Controller
         ];
     }
 
-    public function beforeAction($action)
+    public function beforeAction($action): bool
     {
         $user = User::findOne(Yii::$app->user->id);
         $model = Setting::findOne(1);
@@ -265,14 +265,14 @@ class OperatorController extends Controller
         ]);
     }
 
-    public function actionSearch()
+    public function actionSearch(): string
     {
         $key = Yii::$app->request->get('key');
         if(Yii::$app->request->get('key')){
             $query = OrdersReturn::find()
                 ->where(['like', 'id', $key])
-                ->orWhere(['like', 'customer_phone', $key])
-                ->orWhere(['like', 'customer_name', $key])
+                ->orWhere(['like', 'phone', $key])
+                ->orWhere(['like', 'full_name', $key])
                 ->andWhere(['operator_id' => Yii::$app->user->id]);
         }
 
