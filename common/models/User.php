@@ -4,6 +4,7 @@ namespace common\models;
 use admin\models\AdminOrders;
 use Yii;
 use yii\behaviors\TimestampBehavior;
+use yii\db\ActiveQuery;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 use kartik\password\StrengthValidator;
@@ -130,7 +131,7 @@ class User extends ActiveRecord implements IdentityInterface
      * {@inheritdoc}
      */
 
-    public function attributeLabels()
+    public function attributeLabels(): array
     {
         return [
             'first_name' => Yii::t("app", "First name"),
@@ -394,27 +395,54 @@ class User extends ActiveRecord implements IdentityInterface
         return OperatorOrders::find()->where(['operator_id' => $this->id, 'status' => OperatorOrders::STATUS_PAID])->sum('amount');
     }
 
-    public function getOperatorAcceptedOrders(){
-        return Orders::find()->where(['operator_id' => $this->id])->count();
+    private function getOrderModel(): ActiveQuery
+    {
+        $role = $this->assignment ? $this->assignment->item_name : null;
+
+        if ($role === 'operator_returned') {
+            return OrdersReturn::find();
+        }
+        return Orders::find();
     }
 
-    public function getOperatorDeliveredOrders(){
-        return Orders::find()->where(['operator_id' => $this->id, 'status' => Orders::STATUS_DELIVERED])->count();
+    public function getOperatorAcceptedOrders()
+    {
+        return $this->getOrderModel()
+            ->where(['operator_id' => $this->id])
+            ->count();
     }
 
-    public function getOperatorReturnedOrders(){
-        return Orders::find()->where(['operator_id' => $this->id, 'status' => Orders::STATUS_RETURNED_OPERATOR])->count();
+    public function getOperatorDeliveredOrders()
+    {
+        return $this->getOrderModel()
+            ->where(['operator_id' => $this->id, 'status' => Orders::STATUS_DELIVERED])
+            ->count();
     }
 
-    public function getOperatorComeBackOrders(){
-        return Orders::find()->where(['operator_id' => $this->id, 'status' => Orders::STATUS_RETURNED])->count();
+    public function getOperatorReturnedOrders()
+    {
+        return $this->getOrderModel()
+            ->where(['operator_id' => $this->id, 'status' => Orders::STATUS_RETURNED_OPERATOR])
+            ->count();
     }
 
-    public function getAssignment(){
+    public function getOperatorComeBackOrders()
+    {
+        return $this->getOrderModel()
+            ->where(['operator_id' => $this->id, 'status' => Orders::STATUS_RETURNED])
+            ->count();
+    }
+
+    /**
+     * @return ActiveQuery
+     */
+    public function getAssignment(): ActiveQuery
+    {
         return $this->hasOne(AuthAssignment::className(), ['user_id' => 'id']);
     }
 
-    public function getFullName(){
+    public function getFullName(): string
+    {
         if ($this->first_name == ''){
             return Yii::t("app", "Full name");
         }else{
@@ -422,7 +450,8 @@ class User extends ActiveRecord implements IdentityInterface
         }
     }
 
-    public function getAvatar(){
+    public function getAvatar(): string
+    {
         if ($this->filename == '' || !file_exists('uploads/user/' . $this->filename)){
             return '/backend/web/uploads/' . Setting::findOne(1)->open_graph_photo;
         }else{
@@ -430,7 +459,8 @@ class User extends ActiveRecord implements IdentityInterface
         }
     }
     
-    public function getOperatorAvatar(){
+    public function getOperatorAvatar(): string
+    {
         if ($this->filename == '' || file_exists('https://operator.sifatli.com/uploads/user/' . $this->filename)){
             return '/backend/web/uploads/' . Setting::findOne(1)->open_graph_photo;
         }else{
