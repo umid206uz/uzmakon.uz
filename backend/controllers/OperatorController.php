@@ -14,7 +14,7 @@ use yii\filters\VerbFilter;
 
 class OperatorController extends Controller
 {
-    public function behaviors()
+    public function behaviors(): array
     {
         return array_merge(
             parent::behaviors(),
@@ -29,7 +29,7 @@ class OperatorController extends Controller
         );
     }
 
-    public function actionIndex()
+    public function actionIndex(): string
     {
         $searchModel = new OperatorSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
@@ -40,31 +40,32 @@ class OperatorController extends Controller
         ]);
     }
 
-    public function actionView($id)
+    public function actionView($id): string
     {
-        $new_order_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_NEW])->count();
-        $delivered_order_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_DELIVERED])->count();
-        $being_delivered_order_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_BEING_DELIVERED])->count();
-        $returned_order_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_RETURNED_OPERATOR])->count();
-        $read_to_delivery_order_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_READY_TO_DELIVERY])->count();
-        $black_list_order_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_BLACK_LIST])->count();
-        $hold_order_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_HOLD])->count();
-        $preparing_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_PREPARING])->count();
-        $come_back_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_RETURNED])->count();
-        $then_takes_back_count = Orders::find()->where(['operator_id' => $id, 'status' => Orders::STATUS_THEN_TAKES])->count();
+        $counts = Orders::find()
+            ->select(['status', 'COUNT(*) AS cnt'])
+            ->where(['operator_id' => $id])
+            ->groupBy('status')
+            ->indexBy('status')
+            ->asArray()
+            ->all();
+
+        $getCount = function($status) use ($counts) {
+            return isset($counts[$status]) ? (int)$counts[$status]['cnt'] : 0;
+        };
 
         return $this->render('view', [
-            'model' => $this->findModel($id),
-            'new_order_count' => $new_order_count,
-            'delivered_order_count' => $delivered_order_count,
-            'being_delivered_order_count' => $being_delivered_order_count,
-            'read_to_delivery_order_count' => $read_to_delivery_order_count,
-            'black_list_order_count' => $black_list_order_count,
-            'hold_order_count' => $hold_order_count,
-            'preparing_count' => $preparing_count,
-            'returned_order_count' => $returned_order_count,
-            'come_back_count' => $come_back_count,
-            'then_takes_back_count' => $then_takes_back_count,
+            'model'                       => $this->findModel($id),
+            'new_order_count'             => $getCount(Orders::STATUS_NEW),
+            'delivered_order_count'       => $getCount(Orders::STATUS_DELIVERED),
+            'being_delivered_order_count' => $getCount(Orders::STATUS_BEING_DELIVERED),
+            'read_to_delivery_order_count'=> $getCount(Orders::STATUS_READY_TO_DELIVERY),
+            'black_list_order_count'      => $getCount(Orders::STATUS_BLACK_LIST),
+            'hold_order_count'            => $getCount(Orders::STATUS_HOLD),
+            'preparing_count'              => $getCount(Orders::STATUS_PREPARING),
+            'returned_order_count'         => $getCount(Orders::STATUS_RETURNED_OPERATOR),
+            'come_back_count'              => $getCount(Orders::STATUS_RETURNED),
+            'then_takes_back_count'        => $getCount(Orders::STATUS_THEN_TAKES),
         ]);
     }
 
@@ -105,7 +106,7 @@ class OperatorController extends Controller
         ]);
     }
 
-    public function actionHistoryBalance($id)
+    public function actionHistoryBalance($id): string
     {
         $model = $this->findModel($id);
         $dataProvider = new ActiveDataProvider([

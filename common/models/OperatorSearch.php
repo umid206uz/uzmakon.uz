@@ -24,9 +24,8 @@ class OperatorSearch extends User
     /**
      * {@inheritdoc}
      */
-    public function scenarios()
+    public function scenarios(): array
     {
-        // bypass scenarios() implementation in the parent class
         return Model::scenarios();
     }
 
@@ -39,7 +38,7 @@ class OperatorSearch extends User
      */
     public function search($params)
     {
-        $query = User::find()->joinWith('assignment')->where(['auth_assignment.item_name' => 'operator']);
+        $query = User::find()->joinWith('assignment')->where(['auth_assignment.item_name' => 'operator'])->orWhere(['auth_assignment.item_name' => 'operator_returned']);
 
         // add conditions that should always apply here
 
