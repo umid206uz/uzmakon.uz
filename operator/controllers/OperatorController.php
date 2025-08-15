@@ -267,6 +267,7 @@ class OperatorController extends Controller
 
     public function actionSearch(): string
     {
+        dd('asd');
         $key = Yii::$app->request->get('key');
         if(Yii::$app->request->get('key')){
             $query = OrdersReturn::find()
