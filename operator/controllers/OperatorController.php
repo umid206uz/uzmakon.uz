@@ -267,10 +267,9 @@ class OperatorController extends Controller
 
     public function actionSearch(): string
     {
-        dd('asd');
         $key = Yii::$app->request->get('key');
         if(Yii::$app->request->get('key')){
-            $query = OrdersReturn::find()
+            $query = Orders::find()
                 ->where(['like', 'id', $key])
                 ->orWhere(['like', 'phone', $key])
                 ->orWhere(['like', 'full_name', $key])
